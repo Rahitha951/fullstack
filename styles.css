@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'inter',sans-serif;
   margin: 0;
   padding: 0;
   color: #333;
@@ -9,6 +10,20 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+.nav-container{
+margin-left: 5px;
+height: 20px;
+align-items: center;
+align-content: center;
+
+}
+
+.nav-container .logo {
+  margin-left: 162px;
+  align-self: center;
+  
+  
+}
 
 .header-container {
   display: flex;
@@ -17,16 +32,21 @@ body {
   background-color: #001f3f; 
   color: #fff;
   font-size: 12px;
+  align-items: center;
+  width: 1080px;
+  margin-left: 129px;
 }
 
 .header-left p, .header-right p {
   margin: 0;
-  display: inline;
-  margin-right: 15px;
+  
+  margin-left: 0; 
 }
 
-.header-left i{
+.header-left i {
   color: #20c997;
+margin-right: 4px;
+
 }
 
 .header-right i {
@@ -38,19 +58,18 @@ body {
   background-color: white;
 }
 
-.header-right .fab.fa-linkedin-in {
-  color: white;
-  background-color: #001f3f; 
-}
 
-.header-right .fab.fa-facebook-f,
-.header-right .fab.fa-twitter {
-  font-size: 12px; 
-}
 
 .header-right a {
-  margin-left: 10px;
+  margin-left: 15px;
   color: #fff; 
+}
+.header-left img{
+  margin-left: 40px;
+}
+.header-right img {
+  margin-left: 10px; 
+  margin-right: 15px; 
 }
 
 nav {
@@ -62,7 +81,12 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
+  padding: 20px 0;
+  font-family: "inter";
+  width: 1195px;
+  margin-top: 9px;
+  height: 3px;
+  
 }
 
 .nav-links {
@@ -70,28 +94,37 @@ nav {
   list-style-type: none;
   padding: 0;
   margin: 5px;
-  margin-left: 2px;
+  margin-left: 2500px;
+  margin-right:200px ;
+  margin-bottom: 5px;
+  
 }
 
-.nav-links li {
-  margin: 10 15px;
-}
+
 
 .nav-links {
   list-style: none;
   display: flex;
   margin: 0;
-  height: 10px;
+  height: 4px;
   margin-left: 60px;
   font-size: 15px;
   padding: 0;
+  align-items: center;
+  align-content: center;
+  
 }
+
 
 .nav-links li {
   margin-right: 20px;
+  align-items: center;
+  margin: 0 14px;
+  
+  
 }
 
-.hero-form .btn i{
+.hero-form .btn i {
   border-radius: 60%;
   size: 2px;
   margin-left: 5px;
@@ -102,18 +135,26 @@ nav {
 .nav-links a {
   color: #001f3f; 
   text-decoration: none;
-  font-weight: bold;
+  font-family: 'inter';
+  align-items: center;
+  
 }
-
+.nav-links img{
+  margin-right: 32px;
+  margin-left: 12px;
+  
+}
 .hero {
   background-image: url('images/newm.jpg'); 
-  width: 100%;
+  width: 1280px;
   object-fit: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 656px;
+  left: 30px;
   position: relative;
   overflow: hidden;
+  font-family: 'inter',sans-serif;
 }
 
 .hero::before {
@@ -130,19 +171,29 @@ nav {
   filter: brightness(50%); 
   z-index: 1;
 }
-
+.hero-text .btn{
+  color:white
+}
 .hero-container {
   position: relative;
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between;
   align-items: center;
   height: 100%;
   color: #fff;
 }
-
+.service .layer1{
+  z-index: 1;
+}
+.service .layer2{
+  z-index: 2;
+}
 .hero-text {
   max-width: 50%;
+  font-size: 15px;
+  font-weight: none;
+
 }
 
 .hero-text h1 {
@@ -151,8 +202,11 @@ nav {
 }
 
 .hero-text p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0 0 20px;
+  
+  
+  font-weight: none;
 }
 
 .hero-form {
@@ -163,6 +217,8 @@ nav {
   color: #333;
   font-size: 12px;
   width: 245px;
+  margin-top: 10px;
+  margin-left: 100px;
 }
 
 .hero-form h2 {
@@ -225,26 +281,53 @@ nav {
   width: 50%;
   margin-left: 10px;
 }
-
+.service{
+  position: relative;
+  text-align: left;
+  
+}
 .services {
   padding: 0px 0;
   background-color: white;
-  text-align: center;
-  width: 100%;
+  text-align: left;
+  width: 1280px;
+}
+.ellipse {
+  width: 40px;
+  height: auto;
+  
+}
+.icon1{
+  
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: auto;
+}
+.icon {
+  position: absolute;
+  top: 20%;
+  left: 11.5%;
+  transform: translate(-50%, -50%);
+  width: 20px; 
+  height: auto;
+  text-align: left;
 }
 
 .services-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-size: 15px;
+  top: -10px;
+  font-size: 14px;
   align-items: flex-start;
+  margin-left: 145px;
+
 }
 
 .service {
-  width: 30%;
+  width: 40%;
   padding: 20px;
-  box-sizing: border-box;
 }
 
 .service i {
@@ -256,67 +339,4 @@ nav {
 .service h3 {
   font-size: 1.5em;
   margin: 10px 0;
-}
-
-
-
-@media (max-width: 768px) {
-  .header-container, .nav-container, .hero-container, .services-container {
-      width: 90%;
-  }
-  .header-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  .header-left, .header-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  .nav-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  .nav-links {
-      flex-direction: column;
-      width: 100%;
-  }
-  .hero-container {
-      flex-direction: column;
-      align-items: flex-start;
-  }
-  .hero-text {
-      max-width: 100%;
-      margin-bottom: 20px;
-  }
-  .services-container {
-      flex-direction: column;
-      align-items: center;
-  }
-  .service {
-      width: 90%;
-      margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 480px) {
-  .header-container, .nav-container, .hero-container, .services-container {
-      width: 95%;
-  }
-  .hero {
-      height: 400px;
-  }
-  .hero-text h1 {
-      font-size: 1.8em;
-  }
-  .hero-text p {
-      font-size: 1em;
-  }
-  .hero-form {
-      width: 100%;
-      padding: 20px;
-  }
-  .btn {
-      width: 100%;
-  }
 }
