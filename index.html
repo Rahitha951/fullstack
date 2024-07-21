@@ -1,34 +1,42 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/adb604d084.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Consultancy</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="header-left">
-                <img src="images/header.png"alt="header">
-                
+                <div class="left-header-content" style="display: flex;">
+                    <div><i class="fa-solid fa-phone iconAb"></i>087 245 0049/ 018137811</div>
+                    <hr class="hrline">
+                    <div><i class="fa-solid fa-envelope" style="color: #63E6BE; font-size: 13px;"></i>contact@sample.ie</div>
+                    <hr class="hrline">
+                    <div><i class="fa-regular fa-clock fa-flip-horizontal" style="color: #63E6BE;"></i>mon-thu :8:00 am to 9:00 pm</div>
+                </div>
             </div>
             <div class="header-right">
-                <img src="images/fa.png" alt="fa">
-                <img src="images/tw.png" alt="tw">
-                <img src="images/li.png" alt="li">
+                <i class="fa-brands fa-facebook socialmedia-icon"></i>
+                <i class="fa-brands fa-square-twitter socialmedia-icon"></i>
+                <i class="fa-brands fa-linkedin-in socialmedia-icon"></i>
             </div>
         </div>
     </header>
     <nav>
         <div class="nav-container">
             <div class="logo">
-                <img src="images/logo..png" alt="Logo">
+                <img src="images/logo.png" alt="Logo">
             </div>
-            <ul class="nav-links">
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">About Us</a></li>
@@ -43,7 +51,7 @@
         <div class="hero-container">
             <div class="hero-text">
                 <h1>Take The Right Step For Your Business</h1>
-                <p>TAx Associate is a leading consultancy firm that provides simple,effective company registration,and accounting solutions to enterprises in Ireland.</p>
+                <p>TAx Associate is a leading consultancy firm that provides simple, effective company registration, and accounting solutions to enterprises in Ireland.</p>
                 <button class="btn">Get Started</button>
             </div>
             <div class="hero-form">
@@ -53,12 +61,11 @@
                     <input type="text" id="name" name="name">
                     <label for="email">Email Id</label>
                     <input type="email" id="email" name="email">
-                    
                     <label for="pps-number">PPS Number</label>
                     <input type="text" id="pps-number" name="pps-number">
                     <div class="checkbox-container">
                         <input type="checkbox" id="terms" name="terms">
-                        <label for="terms">I have read & agreed to the authorisation and the<a href="#" class="terms-link">Terms & Conditions</a></label>
+                        <label for="terms">I have read & agreed to the authorisation and the <a href="#" class="terms-link">Terms & Conditions</a></label>
                     </div>
                     <button type="submit" class="btn">Apply<i class="fa fa-arrow-right"></i></button>
                 </form>
@@ -68,21 +75,18 @@
     <section class="services">
         <div class="services-container">
             <div class="service">
-                
                 <img src="images/Ellipse 1.png" alt="Ellipse" class="ellipse">
                 <img src="images/Vector.png" alt="Icon" class="icon1">
                 <h3>Start Up Services</h3>
-                <p>We support entrepreneurs to build their businesses by providing them with the ideal company formation legal services .</p>
+                <p>We support entrepreneurs to build their businesses by providing them with the ideal company formation legal services.</p>
             </div>
             <div class="service">
                 <img src="images/Ellipse 1.png" alt="Ellipse" class="ellipse">
                 <img src="images/calc.png" alt="Icon" class="icon">
-                
                 <h3>Finance & Accounting</h3>
-                <p>We provide our clients with the best in the market,accounting,and financial services to help accelerate their business growth.</p>
+                <p>We provide our clients with the best in the market, accounting, and financial services to help accelerate their business growth.</p>
             </div>
             <div class="service">
-                
                 <img src="images/Ellipse 1.png" alt="Ellipse" class="ellipse">
                 <img src="images/Group.png" alt="Icon" class="icon">
                 <h3>Risk & Assurance</h3>
@@ -90,5 +94,15 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navToggle = document.getElementById('nav-toggle');
+            const navLinks = document.getElementById('nav-links');
+
+            navToggle.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
